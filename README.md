@@ -2,8 +2,6 @@
 
 Flutter plugin for Monnify SDK
 
-[![pub package](https://img.shields.io/pub/v/monnify_flutter_sdk.svg)](https://pub.dartlang.org/packages/monnify_flutter_sdk_plus)
-
 ## Getting Started
 To use this plugin, add `monnify_flutter_sdk_plus` as a [dependency in your pubspec.yaml file](https://flutter.io/platform-plugins/).
 
