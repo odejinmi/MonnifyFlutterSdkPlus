@@ -20,6 +20,7 @@ class MonnifyFlutterSdkPlus {
   Future<String?> getPlatformVersion() {
     return MonnifyFlutterSdkPlusPlatform.instance.getPlatformVersion();
   }
+
   static Future<bool> initialize(String apiKey, String contractCode,
       ApplicationMode applicationMode) async {
     Map<String, String> args = {

@@ -8,13 +8,14 @@ abstract class MonnifyFlutterSdkPlusPlatform extends PlatformInterface {
 
   static final Object _token = Object();
 
-  static MonnifyFlutterSdkPlusPlatform _instance = MethodChannelMonnifyFlutterSdkPlus();
+  static MonnifyFlutterSdkPlusPlatform _instance =
+      MethodChannelMonnifyFlutterSdkPlus();
 
   /// The default instance of [MonnifyFlutterSdkPlusPlatform] to use.
   ///
   /// Defaults to [MethodChannelMonnifyFlutterSdkPlus].
   static MonnifyFlutterSdkPlusPlatform get instance => _instance;
-  
+
   /// Platform-specific implementations should set this with their own
   /// platform-specific class that extends [MonnifyFlutterSdkPlusPlatform] when
   /// they register themselves.

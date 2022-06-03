@@ -44,17 +44,14 @@ class _MyAppState extends State<MyApp> {
 
     try {
       transactionResponse =
-      await MonnifyFlutterSdkPlus.initializePayment(Transaction(
+          await MonnifyFlutterSdkPlus.initializePayment(Transaction(
         2000.0,
         "NGN",
         "Customer Name",
         "mail.cus@tome.er",
         getRandomString(15),
         "Description of payment",
-        metaData: {
-          "ip": "196.168.45.22",
-          "device": "mobile"
-        },
+        metaData: {"ip": "196.168.45.22", "device": "mobile"},
         paymentMethods: [PaymentMethod.CARD, PaymentMethod.ACCOUNT_TRANSFER],
         /*incomeSplitConfig: [SubAccountDetails("MFY_SUB_319452883968", 10.5, 500, true),
                 SubAccountDetails("MFY_SUB_259811283666", 10.5, 1000, false)]*/
@@ -62,7 +59,6 @@ class _MyAppState extends State<MyApp> {
 
       _showToast(
           "${transactionResponse.transactionStatus}\n${transactionResponse.paymentReference}\n${transactionResponse.transactionReference}\n${transactionResponse.amountPaid}\n${transactionResponse.amountPayable}\n${transactionResponse.paymentDate}\n${transactionResponse.paymentMethod}");
-
     } on PlatformException catch (e, s) {
       print("Error initializing payment");
       print(e);
