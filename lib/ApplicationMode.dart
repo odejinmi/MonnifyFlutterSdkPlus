@@ -1,0 +1,1 @@
+enum ApplicationMode { LIVE, TEST }
