@@ -29,3 +29,9 @@
 * Upgrade flutter sdk
 * solve Type mismatch: inferred type is Activity? but Activity was expected
 * solve v1 problem
+
+
+## 1.1.2+1
+
+* Upgrade flutter sdk
+* solve android deprecated: deprecated version of the Android embedding
