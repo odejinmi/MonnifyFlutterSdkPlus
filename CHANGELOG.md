@@ -35,3 +35,9 @@
 
 * Upgrade flutter sdk
 * solve android deprecated: deprecated version of the Android embedding
+
+
+## 1.1.3
+
+* Upgrade flutter sdk
+* solve android deprecated: deprecated version of the Android embedding
